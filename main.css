@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Golos Text', sans-serif;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* TITOLO PRINCIPALE E SOTTOTITOLO */ 
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+}
+
+#title-one {
+    font-size: 42px;
+    padding: 1.5%;
+}
+
+#subtitle {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* CARD PIANI DISPONIBILI*/
+
+.card-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    height: 55vh;
+    background-color: rgb(241, 241, 241);
+    transition: transform .5s;
+}
+
+.card:hover {
+    transform: scale(1.17);
+    background-color:  rgb(230, 230, 230);
+}
+
+.info {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 5%;
+}
+
+.plan-type {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.price {
+    font-size: 19px;
+    color: rgb(34, 34, 34);
+    margin-bottom: 4%;
+}
+
+/* SPAN PER L'ENFASI SUL PREZZO */
+#enph {
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(14, 14, 14);
+}
+
+.description {
+    color: rgb(18, 18, 18);
+}
+
+/* ACTIVE CLASS FOR FOCUS */
+
+.active {
+    transform: scale(20);
+}
+
+/* FEATURES */
+
+.features {
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+}
+
+.features ul li {
+    list-style-type: none;
+    padding: 4%;
+    font-size: 15px;
+}
+
+/* SPUNTA CHECK */
+ul li:before {
+    content: '\2713';
+    display: inline-block;
+    color: rgb(0, 255, 13);
+    padding: 0 6px 0 0;
+  }
+
+  /* BUTTON  */
+
+  .buttons {
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .getstarted {
+    font-size: 16px;
+    color: rgb(240, 240, 240);
+    background-color: #1e2338;
+    width: 100%;
+    height: 5vh;
+    border-radius: 7px;
+  }
